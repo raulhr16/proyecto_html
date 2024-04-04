@@ -9,7 +9,7 @@
     <meta content="Free Website Template" name="description">
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.png" rel="icon">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -103,26 +103,26 @@
                 <div class="col-md-6 pb-5">
                     <div class="contact-form">
                         <div id="success"></div>
-                        <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                        <form name="sentMessage" id="contactForm" action="http://172.22.200.240/resultado.php" method="post">
                             <div class="control-group">
-                                <input type="text" class="form-control bg-transparent p-4" id="name" placeholder="Tu nombre"
-                                    required="required" data-validation-required-message="Please enter your name" />
+                                <input type="text" class="form-control bg-transparent p-4" id="name" name="name" placeholder="Tu nombre"
+                                    required="required" data-validation-required-message="Por favor, introduzca un nombre" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="email" class="form-control bg-transparent p-4" id="email" placeholder="Tu correo"
-                                    required="required" data-validation-required-message="Please enter your email" />
+                                <input type="email" class="form-control bg-transparent p-4" id="email" name="email" placeholder="Tu correo"
+                                    required="required" data-validation-required-message="Por favor, introduzca un correo" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <input type="text" class="form-control bg-transparent p-4" id="subject" placeholder="Asunto"
-                                    required="required" data-validation-required-message="Please enter a subject" />
+                                <input type="text" class="form-control bg-transparent p-4" id="subject" name="subject" placeholder="Asunto"
+                                    required="required" data-validation-required-message="Por favor, introduzca un asunto" />
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div class="control-group">
-                                <textarea class="form-control bg-transparent py-3 px-4" rows="5" id="message" placeholder="Mensaje"
+                                <textarea class="form-control bg-transparent py-3 px-4" rows="5" id="message" name="message" placeholder="Mensaje"
                                     required="required"
-                                    data-validation-required-message="Please enter your message"></textarea>
+                                    data-validation-required-message="Por favor, introduce un mensaje"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
                             <div>
@@ -170,12 +170,14 @@
                 <h4 class="text-black text-uppercase mb-4" style="letter-spacing: 3px;">Newsletter</h4>
                 <p>Introduce tu correo para suscribirte a nuestro newsletter</p>
                 <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Correo">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary font-weight-bold px-3">Suscribirse</button>
+                    <form action="https://www.decathlon.es/es/servicios_fidelidad_lp-FZCSFR" method="post">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-light" style="padding: 25px;" placeholder="Tu Correo">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary font-weight-bold px-3" type="submit">Suscribirse</button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

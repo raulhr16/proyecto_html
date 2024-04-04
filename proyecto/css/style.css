@@ -9701,7 +9701,7 @@ h6,
 .page-header,
 .offer,
 .footer {
-  background: linear-gradient(rgb(168 226 255 / 90%), rgb(168 226 255 / 90%)), url(../img/bg.jpg);
+  background: linear-gradient(rgb(168 226 255 / 100%), rgb(168 226 255 / 100%)), url(../img/bg.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
